@@ -11,3 +11,14 @@ body {
 
 #carrousel {
 }
+
+#menu {
+    display: inline-block;
+}
+
+/*---------- FOOTER ----------*/
+
+.contact{
+      position:relative;
+      z-index: 1;
+}
