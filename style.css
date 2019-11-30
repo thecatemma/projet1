@@ -33,8 +33,9 @@ h2 {
       z-index: 1;
 }
 
-input[type="text"] {
+/*--- FORM ---*/
+
+input {
         display: block;
         margin-bottom:5%;
-        width: 80%;
 }
