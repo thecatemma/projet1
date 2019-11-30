@@ -26,6 +26,12 @@ h2 {
     display: inline-block;
 }
 
+#info_button {
+    color: white;
+	background-color: #5CABD1;
+	border-radius: 15px;
+}
+
 /*---------- FOOTER ----------*/
 
 .contact{
