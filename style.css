@@ -32,3 +32,9 @@ h2 {
       position:relative;
       z-index: 1;
 }
+
+input[type="text"] {
+        display: block;
+        margin-bottom:5%;
+        width: 80%;
+}
