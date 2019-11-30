@@ -41,5 +41,7 @@ input {
 }
 
 #form_button {
-    color: blue;
+    color: white;
+	background-color: #5CABD1;
+	border-radius: 15px;
 }
