@@ -17,6 +17,34 @@ h2 {
     color:; 
 }
 
+a {
+    font-size:;
+    color: black;
+    text-decoration: none;
+}
+
+
+/*--- NAVBAR ---*/
+
+.navbar {
+    position: fixed;
+    display: flex;
+    height: 100px;
+    width: 100%;
+    z-index: 2;
+    background-color: #fff;
+    top: 0;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+    /*padding-right: 33px;*/
+}
+
 /*---------- SLIDER ----------*/
 
 #carrousel {
@@ -51,3 +79,5 @@ input {
 	background-color: #5CABD1;
 	border-radius: 15px;
 }
+
+/*--- MEDIA QUERIES & RESPONSIVE BREAKPOINTS ---*/
