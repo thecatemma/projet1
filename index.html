@@ -8,6 +8,8 @@
 <!-- CSS -->	  
     <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+<!-- Bibliothèque online pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 <!-- Title -->
   </head>
     
@@ -15,18 +17,26 @@
     
     <header>        
         <div class="navbar">
-            <ul id="menu">
-                <li><img src="images/logo.png" alt="logo webagency" /></li>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+            
+            <div>
+                <img src="images/logo.png" alt="logo webagency" />
+            </div>
+            
+            <nav>
+                <ul id="menu">
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            
         </div> 
     </header>
     
     <div id="carrousel">
-        <ul>
+        
+        <ul id="slider_content">
             <li>
                 <img src="images/slider/img1.jpg">
             </li>
@@ -47,26 +57,38 @@
                 
         <div class='container'>
             
-                <div>
+                <div class="part_1">
 			        <img src="images/main-feature.png" alt="screen">
 				</div>
                 
-                <div>
+                <div class="part_2">
+                <div>  
+                    <div class="icon">
+				        <i class="fab fa-behance" class="behance" alt="Behance"></i>
+				    </div>
                     <div>
                         <h3>UX design</h3>
 					    <p>Un système d'interaction à son paroxysme.</p>
                     </div>
-                    
+                </div> 
+                <div>
+                    <div class="icon">
+				        <i class="fab fa-behance" alt="Behance"></i>
+				    </div>
                     <div>
                         <h3>UI design</h3>
 					    <p>Créativité, originalité et finition visuelle.</p>
                     </div>
-                    
+                </div> 
+                <div>
+                    <div class="icon">
+				        <i class="fab fa-behance" alt="Behance"></i>
+				    </div>
                     <div>
                         <h3>SEO</h3>
 					    <p>Un référencement naturel de pointe grâce à nos meilleurs outils et notre efficacité qui n'est plus à prouver !</p>
                     </div>
-                
+                </div>
                 </div>
    
         </div>        

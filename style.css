@@ -8,13 +8,13 @@ body {
 }
 
 h1 {
-    font-size:;
-    color:;  
+    font-size: 24px;
+    color: black;  
 }
 
 h2 {
-    font-size:;
-    color:; 
+    font-size: 16px;
+    color: black; 
 }
 
 a {
@@ -23,18 +23,7 @@ a {
     text-decoration: none;
 }
 
-
 /*--- NAVBAR ---*/
-
-.navbar {
-    position: fixed;
-    display: flex;
-    height: 100px;
-    width: 100%;
-    z-index: 2;
-    background-color: #fff;
-    top: 0;
-}
 
 ul {
     display: flex;
@@ -42,7 +31,35 @@ ul {
 
 li {
     list-style: none;
-    /*padding-right: 33px;*/
+    padding-right: 33px;
+}
+
+.navbar {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    z-index: 2;
+    background-color: #fff;
+    top: 0;
+}
+
+.navbar .logo {
+    position: relative;
+    top: 9px;
+}
+
+.navbar .navigator {
+    position: relative;
+    top: 2px;
+}
+
+.navbar a:hover {
+    border-top: 14px solid #5CABD1;
+    padding-top: 35px;
+
 }
 
 /*---------- SLIDER ----------*/
@@ -58,6 +75,44 @@ li {
     color: white;
 	background-color: #5CABD1;
 	border-radius: 15px;
+    padding: 8px;
+}
+
+#slider_content {
+    position: relative;   
+    top: 24px; 
+    height: 100%;         
+    left: 0;    
+    padding: 0;
+    margin: 0;
+    width: 200%;
+    transition: left 0.8s; /* Animation - Transition CSS 3 */
+}
+
+/*---- SERVICES ----*/
+
+.icon {
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 50%;
+    color: lightgray;
+}
+
+.behance {
+    color: #5CABD1;  
+}
+
+.first-part {
+ 	display: flex;
+    justify-content: center;
+}
+    
+}
+
+.second-part {
+    
 }
 
 /*---------- FOOTER ----------*/
@@ -70,14 +125,15 @@ li {
 /*--- FORM ---*/
 
 input {
-        display: block;
-        margin-bottom: 3%;
+    display: block;
+    margin-bottom: 3%;
 }
 
 #form_button {
     color: white;
 	background-color: #5CABD1;
 	border-radius: 15px;
+    padding: 8px;
 }
 
 /*--- MEDIA QUERIES & RESPONSIVE BREAKPOINTS ---*/
