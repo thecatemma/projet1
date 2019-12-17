@@ -105,14 +105,19 @@ li {
 }
 
 .first-part {
+}
+
+.left-part {
  	display: flex;
     justify-content: center;
 }
     
 }
 
-.second-part {
-    
+.right-part {
+    float: left;
+    width: 50%;
+    text-align: center;   
 }
 
 /*---------- FOOTER ----------*/
