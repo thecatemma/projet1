@@ -140,3 +140,9 @@ input {
 }
 
 /*--- MEDIA QUERIES & RESPONSIVE BREAKPOINTS ---*/
+
+/*Définir 4 media queries*/
+
+.text-services {
+    padding: 0;
+}
