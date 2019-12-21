@@ -1,4 +1,5 @@
-/*---------- BODY ----------*/
+/*--- BODY ---*/
+
 body {
 	font-family:'Roboto', sans-serif;
     line-height: 1.5;
@@ -15,6 +16,12 @@ h1 {
 h2 {
     font-size: 16px;
     color: black; 
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
 }
 
 a {
@@ -62,7 +69,7 @@ li {
 
 }
 
-/*---------- SLIDER ----------*/
+/*--- SLIDER ---*/
 
 #carrousel {
 }
@@ -86,18 +93,18 @@ li {
     padding: 0;
     margin: 0;
     width: 200%;
-    transition: left 0.8s; /* Animation - Transition CSS 3 */
+    transition: left 0.8s;
 }
 
-/*---- SERVICES ----*/
+/*--- SERVICES ---*/
 
 .services {
 	position: relative;
 }
 
-
 .first-part {
-    
+    display: flex;
+    justify-content: center;
 }
 
 .container {
@@ -131,46 +138,52 @@ li {
     text-align: center;   
 }
 
-/*---- PROJECTS ----*/
+/*--- PROJECTS ---*/
 
 .projects{
-        background-color: #F5F5F5;
+    background-color: #F5F5F5;
 }
 
 #container {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 15px;
-        justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px;
+    justify-content: center;
 }
 
 figure {
-        position: relative;
-        width: 300px;
-        height: 200px;
-        overflow: hidden;
+    position: relative;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
 }
 
 figcaption {
-        position: absolute;
-        top: 50%;
-        padding-top: 5px;
-        padding-left: 15px;
-        margin-left: 0px;
-        background: rgba(0, 0, 0, 0.38);
-        color: white;*/
-        -webkit-transition:  top 1s;
-        transition:  top 1s;
-        opacity: 0;
-        width: 100%;
-		height: 40.5%;
+    position: absolute;
+    top: 50%;
+    padding-top: 5px;
+    padding-left: 15px;
+    margin-left: 0px;
+    background: rgba(0, 0, 0, 0.38);
+    color: white;*/
+    -webkit-transition:  top 1s;
+    transition:  top 1s;
+    opacity: 0;
+    width: 100%;
+    height: 40.5%;
 }
 
 figcaption p {
-        position: absolute;
-        top: 35px;
-        color: white;
-	    font-size: 15px;
+    position: absolute;
+    top: 35px;
+    color: white;
+    font-size: 15px;
+}
+
+figure.portfolio:hover figcaption {
+    opacity: 1;
+    -webkit-animation: up 3s; 
+    animation: up 3s; 
 }
 
 .portfolio {
@@ -178,7 +191,7 @@ figcaption p {
     display: inline-block;
 }
 
-/*---- FOOTER ----*/
+/*--- FOOTER ---*/
 
 .footer {
     
@@ -195,6 +208,45 @@ input {
     display: block;
     margin-bottom: 3%;
 }
+
+/*
+
+input {    
+	padding: 10px;
+    font-size: 1em;
+    margin: 5%;
+}
+
+input[type="text"] {
+        display: block;
+        margin-bottom:5%;
+        width: 80%;
+}
+
+input[type="Email"] {
+        display: block;
+        margin-bottom: 5%;
+        width:80%;
+}
+
+textarea[name="message"] {
+        display: block;
+        margin-bottom:5%;
+        font-size:1em;
+        margin: 5%;
+        width:85%;
+        height: 150px;
+		border-radius: 5px;
+}
+
+input[type="submit"] {
+        display: block;
+        margin-bottom:5%;
+        background-color: rgb(0, 135, 255);
+        border: 1px;
+}
+
+*/
 
 #form_button {
     color: white;
