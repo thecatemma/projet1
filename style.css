@@ -262,3 +262,19 @@ input[type="submit"] {
 .text-services {
     padding: 0;
 }
+
+@media all and (max-width: 350px){
+    
+}
+
+@media all and (min-width: 769px) {
+    
+}
+
+@media all and (max-width: 1024px){
+    
+}
+
+@media all and (min-width: 1601px) {
+    
+}
