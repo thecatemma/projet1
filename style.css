@@ -1,5 +1,9 @@
 /*--- BODY ---*/
 
+background {
+    position: fixed;
+}
+
 body {
 	font-family:'Roboto', sans-serif;
     line-height: 1.5;
@@ -102,29 +106,28 @@ li {
 	position: relative;
 }
 
+.container {
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
 .first-part {
     display: flex;
     justify-content: center;
 }
 
-.container {
-    
-}
-
 .icon {
     font-size: 24px;
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     border: 1px solid;
     border-radius: 50%;
     color: lightgray;
 }
 
-.behance {
-    color: #5CABD1;  
-}
-
-.first-part {
+.part {
+    display: flex;
+    justify-content: center;
 }
 
 .left-part {
@@ -189,6 +192,27 @@ figure.portfolio:hover figcaption {
 .portfolio {
     margin: 1%;
     display: inline-block;
+}
+
+.eye {
+        position: relative;
+        width: 50px;
+        left: 75%;
+        bottom: 105px;
+        height: 50px;
+        border: 3px solid;
+        border-radius: 50%;
+        z-index: 1;
+        background-color: #5CABD1;
+        color: white;
+}
+
+.see {
+        width: 22px;
+        position: absolute;
+        left: 55%;
+        top: 50%;
+        transform: translate(-50%, -50%);
 }
 
 /*--- FOOTER ---*/
