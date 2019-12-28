@@ -14,7 +14,7 @@ body {
 
 h1 {
     font-size: 24px;
-    color: black;  
+    color: white;  
 }
 
 h2 {
@@ -22,7 +22,7 @@ h2 {
     color: black; 
 }
 
-h2{
+h2 {
     display: flex;
     justify-content: center;
     font-size: 2em;
@@ -32,6 +32,10 @@ a {
     font-size:;
     color: black;
     text-decoration: none;
+}
+
+p {
+    color: black !important;
 }
 
 /*--- NAVBAR ---*/
@@ -62,7 +66,7 @@ li {
     top: 9px;
 }
 
-.navbar .menuNav {
+.navbar .menuBar {
     position: relative;
     top: 2px;
 }
@@ -74,6 +78,30 @@ li {
 }
 
 /*--- SLIDER ---*/
+
+.slider-text {
+	left: 15%;
+    width: 50%;
+    font-size: 0.8em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 50px;
+}
+
+.title {
+    color: #5cadd3;
+}
+
+.slider-text h1,p,button {
+    color: white;
+}
+
+.slider-text p {
+    color: white !important;
+    font-size: 1em;
+	padding-bottom: 20px;
+}
 
 #carrousel {
 }
@@ -114,6 +142,57 @@ li {
 .first-part {
     display: flex;
     justify-content: center;
+}
+
+.title-text {
+    text-align:center;
+}
+
+.title-text h2 {
+    margin-bottom: 0;
+    position: relative;
+    bottom: 10%;
+}
+
+.title-text .separation {
+    border-bottom: 1px solid darkgray;
+    width:130px;
+    display:inline-block;
+    position:relative;
+    z-index:0;
+}
+
+.title-text .separation::before {
+    content: "\f111";
+    font-family: 'FontAwesome';
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: #5CABD1;
+    font-size: 18px;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    padding:0;
+    -webkit-transform: translateX(-50%); /*déplace horizontalement l'élément */
+            transform: translateX(-50%);
+    z-index: 5;   /* apparaît au-dessus du solid et de l'autre content */
+}
+
+.title-text .separation::after { /* pseudo-élément, dernier enfant de l'élément */
+    content: "\f111";
+    font-family: 'FontAwesome';
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: white;
+    font-size: 23px;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    padding:0;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
 }
 
 .icon {
@@ -168,7 +247,7 @@ figcaption {
     padding-left: 15px;
     margin-left: 0px;
     background: rgba(0, 0, 0, 0.38);
-    color: white;*/
+    color: white;
     -webkit-transition:  top 1s;
     transition:  top 1s;
     opacity: 0;
@@ -176,10 +255,14 @@ figcaption {
     height: 40.5%;
 }
 
+figcaption h3 {
+    
+}
+
 figcaption p {
     position: absolute;
     top: 35px;
-    color: white;
+    color: white !important;
     font-size: 15px;
 }
 
@@ -195,24 +278,24 @@ figure.portfolio:hover figcaption {
 }
 
 .eye {
-        position: relative;
-        width: 50px;
-        left: 75%;
-        bottom: 105px;
-        height: 50px;
-        border: 3px solid;
-        border-radius: 50%;
-        z-index: 1;
-        background-color: #5CABD1;
-        color: white;
+    position: relative;
+    width: 50px;
+    left: 75%;
+    bottom: 105px;
+    height: 50px;
+    border: 3px solid;
+    border-radius: 50%;
+    z-index: 1;
+    background-color: #5CABD1;
+    color: white;
 }
 
 .see {
-        width: 22px;
-        position: absolute;
-        left: 55%;
-        top: 50%;
-        transform: translate(-50%, -50%);
+    width: 22px;
+    position: absolute;
+    left: 55%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /*--- FOOTER ---*/
@@ -222,8 +305,9 @@ figure.portfolio:hover figcaption {
 }
 
 .contact{
-    position:relative;
-    z-index: 1;
+      position:relative;
+      z-index: 1;
+      opacity: 0.9;
 }
 
 /*--- FORM ---*/
@@ -232,8 +316,6 @@ input {
     display: block;
     margin-bottom: 3%;
 }
-
-/*
 
 input {    
 	padding: 10px;
@@ -270,13 +352,27 @@ input[type="submit"] {
         border: 1px;
 }
 
-*/
-
 #form_button {
     color: white;
 	background-color: #5CABD1;
 	border-radius: 5px;
     padding: 8px;
+}
+
+/*--- MAP ---*/
+
+.map {
+    position: absolute;
+    width: 100%;
+    height: 650px;
+    background: #3491B2;
+}
+
+.map iframe {
+    width: 100%;
+    height: 650px;
+    opacity: 0.7;
+    border: 0;
 }
 
 /*--- MEDIA QUERIES & RESPONSIVE BREAKPOINTS ---*/
@@ -292,6 +388,10 @@ input[type="submit"] {
 }
 
 @media all and (min-width: 769px) {
+    
+#menuBar input, #menuBar span {
+    display: none;
+}
     
 }
 
