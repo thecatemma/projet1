@@ -396,6 +396,11 @@ input[type="submit"] {
 }
 
 @media all and (max-width: 1024px){
+
+.services .res-part {
+    flex-direction: column;
+    align-items: center;
+}
     
 }
 
