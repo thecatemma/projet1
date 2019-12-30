@@ -18,6 +18,7 @@ h1 {
 }
 
 h2 {
+    font-size:1.5em;
     font-size: 16px;
     color: black; 
 }
@@ -26,6 +27,24 @@ h2 {
     display: flex;
     justify-content: center;
     font-size: 2em;
+}
+
+h3 {
+    text-align: left;
+}
+
+h4 {
+    position: relative;
+    top: -19px;
+}
+
+figcaption, h4 {
+    color: aqua;
+}
+
+h5 {
+    font-size:1.5em;
+    margin: 5%;
 }
 
 a {
@@ -204,6 +223,54 @@ li {
     color: lightgray;
 }
 
+.icon::after {         /* pseudo-élément, dernier enfant de l'élément sélectionné */
+        font-family: "FontAwesome";
+        position: absolute;
+        top: 40%;
+        top: 0;
+        left: 90%;
+        content: '\f111';
+        color: #5CABD1;
+}
+
+.icon {
+        position: relative;
+        right: 100px;
+        top: 70px;
+        width: 50px;
+        height: 50px;
+        border: 1px solid;
+        border-radius: 50%;
+        opacity: 0.7;
+        line-height: 50px; 
+        text-align: center; 
+		color: darkgray;
+}
+
+.icon::after {         /* pseudo-élément, dernier enfant de l'élément sélectionné */
+        font-family: "FontAwesome";
+        position: absolute;
+        top: 40%;
+        top: 0;
+        left: 90%;
+        content: '\f111';
+        color: #5CABD1;
+}
+
+.icon {
+        position: relative;
+        right: 100px;
+        top: 70px;
+        width: 50px;
+        height: 50px;
+        border: 1px solid;
+        border-radius: 50%;
+        opacity: 0.7;
+        line-height: 50px; 
+        text-align: center; 
+		color: darkgray;
+}
+
 .part {
     display: flex;
     justify-content: center;
@@ -301,16 +368,51 @@ figure.portfolio:hover figcaption {
 /*--- FOOTER ---*/
 
 .footer {
+    position:relative;
+    z-index: 1;
+    opacity: 0.9;
     
 }
 
 .contact{
-      position:relative;
-      z-index: 1;
-      opacity: 0.9;
+    position:relative;
+    z-index: 1;
+    opacity: 0.9;
+}
+
+
+/*--- MAP ---*/
+
+.map {
+    position: absolute;
+    width: 100%;
+    height: 650px;
+    background: #3491B2;
+}
+
+.map iframe {
+    width: 100%;
+    height: 650px;
+    opacity: 0.7;
+    border: 0;
 }
 
 /*--- FORM ---*/
+
+form {
+        position: absolute;
+        right: 6%;
+        background: white;
+        opacity: 0.85;
+        margin-top: 0.8%;
+        margin-bottom: 5px;
+        z-index: 1;
+		border-radius: 5px;
+}
+
+form p {
+        margin: 3%;
+}
 
 input {
     display: block;
@@ -357,22 +459,6 @@ input[type="submit"] {
 	background-color: #5CABD1;
 	border-radius: 5px;
     padding: 8px;
-}
-
-/*--- MAP ---*/
-
-.map {
-    position: absolute;
-    width: 100%;
-    height: 650px;
-    background: #3491B2;
-}
-
-.map iframe {
-    width: 100%;
-    height: 650px;
-    opacity: 0.7;
-    border: 0;
 }
 
 /*--- MEDIA QUERIES & RESPONSIVE BREAKPOINTS ---*/
