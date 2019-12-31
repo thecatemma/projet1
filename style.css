@@ -123,6 +123,58 @@ li {
 }
 
 #carrousel {
+	height: auto;
+    position: relative;
+	margin-top: 70px;
+}
+
+#slider {
+	position: relative;   
+    width: 100%;   
+	height: 100%;
+	overflow: hidden;
+	padding: 0;
+}
+
+#sliderContent {
+	position: relative;   
+	top: 0px; 
+    height: 100%;         
+	left: 0;              
+	padding: 0;
+	margin: 0;
+	width: 200%;
+	transition: left 0.8s; /* Animation - Transition CSS 3 */
+}
+
+#sliderContent li {
+	display: inline-block; /* Aligner les éléments du Slider */
+	width: 100%;
+	padding: 0;
+	overflow: hidden; 
+    margin-top: 100px;     /* Bas de la NavBar */
+	position: relative;
+	height: 100%;
+}
+
+#sliderContent li img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); /* modifie espace de coordonnées utilisé */
+	max-width: none;
+	/*max-height: 100%;*/
+	height: auto;
+	line-height:100%;
+	max-width: 300%;		
+}
+
+#img01 {
+     width: 100%;
+}
+
+#img02 {
+     width: 100%;
 }
 
 #menu {
@@ -163,26 +215,26 @@ li {
     justify-content: center;
 }
 
-.title-text {
-    text-align:center;
+.title-section {
+	text-align:center;
 }
 
-.title-text h2 {
-    margin-bottom: 0;
+.title-section h2 {
+	margin-bottom: 0;
     position: relative;
     bottom: 10%;
 }
 
-.title-text .separation {
-    border-bottom: 1px solid darkgray;
+.title-section .separation {
+	border-bottom: 1px solid darkgray;
     width:130px;
     display:inline-block;
     position:relative;
     z-index:0;
 }
 
-.title-text .separation::before {
-    content: "\f111";
+.title-section .separation::before { /* pseudo-élément, premier enfant de l'élément */
+	content: "\f111";
     font-family: 'FontAwesome';
     font-style: normal;
     font-weight: normal;
@@ -190,16 +242,16 @@ li {
     color: #5CABD1;
     font-size: 18px;
     position: absolute;
-    top: -10px;
+	top: -10px;
     left: 50%;
-    padding:0;
-    -webkit-transform: translateX(-50%); /*déplace horizontalement l'élément */
+	padding:0;
+	-webkit-transform: translateX(-50%); /*déplace horizontalement l'élément */
             transform: translateX(-50%);
     z-index: 5;   /* apparaît au-dessus du solid et de l'autre content */
 }
 
-.title-text .separation::after { /* pseudo-élément, dernier enfant de l'élément */
-    content: "\f111";
+.title-section .separation::after { /* pseudo-élément, dernier enfant de l'élément */
+	content: "\f111";
     font-family: 'FontAwesome';
     font-style: normal;
     font-weight: normal;
@@ -223,16 +275,6 @@ li {
     color: lightgray;
 }
 
-.icon::after {         /* pseudo-élément, dernier enfant de l'élément sélectionné */
-        font-family: "FontAwesome";
-        position: absolute;
-        top: 40%;
-        top: 0;
-        left: 90%;
-        content: '\f111';
-        color: #5CABD1;
-}
-
 .icon {
         position: relative;
         right: 100px;
@@ -255,20 +297,6 @@ li {
         left: 90%;
         content: '\f111';
         color: #5CABD1;
-}
-
-.icon {
-        position: relative;
-        right: 100px;
-        top: 70px;
-        width: 50px;
-        height: 50px;
-        border: 1px solid;
-        border-radius: 50%;
-        opacity: 0.7;
-        line-height: 50px; 
-        text-align: center; 
-		color: darkgray;
 }
 
 .part {
@@ -291,6 +319,71 @@ li {
 
 .projects{
     background-color: #F5F5F5;
+}
+
+.btn-part {
+   	display: flex;
+ 	justify-content: center;
+}
+
+.btn-group .button {
+	border: none;
+	color: #64686d;
+	padding: 8px 8px;
+	font-size: 16px;
+	float: left;
+}
+
+.btn-group .button:first-child {
+	border-radius: 4px 0 0 4px;
+}
+
+.btn-group .button:last-child {
+	border-radius: 0 4px 4px 0;
+}
+    
+.btn-group .button.active::after {
+	font-family: 'FontAwesome';
+	content: '\f0d7';
+	position: absolute;
+	right: 45%;
+	/*bottom: -22px;*/
+	color: steelblue;
+	opacity: 0;
+}
+
+.btn-group .button:hover {
+	background-color: rgb(92,173,211);
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 2px solid steelblue;
+}
+
+.btn-group .button:hover::after {
+	font-family: 'FontAwesome';
+	content: '\f0d7';
+	position: relative;
+	right: 45%;
+	top: 20px;
+	color: steelblue;
+	opacity: 1;
+}
+
+.btn-group .button:nth-of-type(1){	
+	background-color: rgb(92,173,211);
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 2px solid steelblue;
+}
+
+.btn-group .button:nth-of-type(1)::after {
+	font-family: 'FontAwesome';
+	content: '\f0d7';
+	position: relative;
+	right: 45%;
+	top: 20px;
+	color: steelblue;
+	opacity: 1;
 }
 
 #container {
@@ -371,7 +464,6 @@ figure.portfolio:hover figcaption {
     position:relative;
     z-index: 1;
     opacity: 0.9;
-    
 }
 
 .contact{
@@ -400,18 +492,18 @@ figure.portfolio:hover figcaption {
 /*--- FORM ---*/
 
 form {
-        position: absolute;
-        right: 6%;
-        background: white;
-        opacity: 0.85;
-        margin-top: 0.8%;
-        margin-bottom: 5px;
-        z-index: 1;
-		border-radius: 5px;
+    position: absolute;
+    right: 6%;
+    background: white;
+    opacity: 0.85;
+    margin-top: 0.8%;
+    margin-bottom: 5px;
+    z-index: 1;
+    border-radius: 5px;
 }
 
 form p {
-        margin: 3%;
+    margin: 3%;
 }
 
 input {
@@ -426,32 +518,32 @@ input {
 }
 
 input[type="text"] {
-        display: block;
-        margin-bottom:5%;
-        width: 80%;
+    display: block;
+    margin-bottom:5%;
+    width: 80%;
 }
 
 input[type="Email"] {
-        display: block;
-        margin-bottom: 5%;
-        width:80%;
+    display: block;
+    margin-bottom: 5%;
+    width:80%;
 }
 
 textarea[name="message"] {
-        display: block;
-        margin-bottom:5%;
-        font-size:1em;
-        margin: 5%;
-        width:85%;
-        height: 150px;
-		border-radius: 5px;
+    display: block;
+    margin-bottom:5%;
+    font-size:1em;
+    margin: 5%;
+    width:85%;
+    height: 150px;
+    border-radius: 5px;
 }
 
 input[type="submit"] {
-        display: block;
-        margin-bottom:5%;
-        background-color: rgb(0, 135, 255);
-        border: 1px;
+    display: block;
+    margin-bottom:5%;
+    background-color: rgb(0, 135, 255);
+    border: 1px;
 }
 
 #form_button {
@@ -486,6 +578,11 @@ input[type="submit"] {
 .services .res-part {
     flex-direction: column;
     align-items: center;
+}
+    
+.our-services .btn-part {
+	flex-direction: column;
+	align-items: center;
 }
     
 }

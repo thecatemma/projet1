@@ -6,7 +6,6 @@
 <!-- TYPO -->	  
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 <!-- CSS -->	  
-    <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 <!-- Bibliothèque téléchargée pour les icônes -->
     <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
@@ -43,36 +42,57 @@
         </div> 
     </header>
     
-    <div id="carrousel">
-        
-        <ul id="slider_content">
-            <li>
-                <img src="images/slider/img1.jpg">
-            </li>
-            <li>
-                <img src="images/slider/img2.jpg">
-            </li>
-        </ul>
-        
-        <a class="fab fa-chevron" alt="chevron-left"></a>
-        <a class="fab fa-chevron" alt="chevron-right"></a>
-        
-        <div class="slider-text">
-            <h1><span class="title">WEBAGENCY</span> : L'AGENCE DE TOUS VOS PROJETS !</h1>
-              <p>Vous-avez besoin d'un site ? La WebAgency vous aide à le réaliser</p>
-              <a id="info_button">Plus d'infos</a>
-        </div>
-    </div>
+	<div class="navbar">
+		<div class="logoleft">
+		     <img src="images/logo.png" alt="logo webagency" />
+		</div>
+
+		<nav class="navigator">
+	    	<div id="menuToggle">
+		    	<input id="check" type="checkbox"/>
+				    <span></span>
+				    <span></span>
+				    <span></span>
+				
+		    	<ul id="menu">
+				      <li><a href="#">Accueil</a></li>
+                      <li><a href="#services">Services</a></li>
+					  <li><a href="#portfolio">Portfolio</a></li>
+                      <li><a href="#contact">Contact</a></li>
+		      	</ul>
+	      	</div>
+	    </nav>
+	
+	</div>
+    
+<section id="carrousel">
+	    <div id="slider">
+			<img id="img01" src="images/slider/bg1.jpg" alt="creative_origin" />
+		  	<a href="#sliderContent" class="chevron left-chevron"></a><a class="fab fa-chevron" alt="chevron-left"></a>
+			<a href="#slider" class="chevron right-chevron"></a><a class="fab fa-chevron" alt="chevron-right"></a>
+			
+			<div class="slider-text">
+		      <h1><span class="title">WEBAGENCY :</span>  L'AGENCE DE TOUS <br/> VOS PROJETS !</h1>
+		      <p id="p_slider">Vous-avez besoin d'un site ? La WebAgency vous aide à le réaliser </p>
+		      <a id="info_button">Plus d'infos</a>
+		    </div>
+		</div>
+	 
+	 <div id="btm"></div>
+	 <div id="btmblue"></div>
+</section>
+
+<!-- Services -->
     
     <section id="services" class="services"> 
         <div class="container">
                <div class="first-part">
-                 <div class="title-text">  
+                 <div class="title-section">  
                     <h2>NOS SERVICES</h2>
+			    	  <span class="separation"></span>
                         <p>Chaque projet, et donc chaque site, est unique. WebAgency vous offre la solution en fonction de vos souhaits et besoins: un site internet fait sur-mesure. Votre site, notre expertise ! Plus que jamais, le conseil, l'agilité, la créativité, l'excellence dans la production sont les clés du succès et de la performance.</p>
                  </div>
-               </div>
-        </div>
+                </div>
             
         <div class="res-part">
             <div class='container'>
@@ -128,10 +148,21 @@
             <div class="first-part">
               <div class="title-text">
                 <h2>NOS PROJETS</h2>
-                    <p> De Paris à Shanghai, de New York à Hong Kong, avec cette touche très recherchée, le groupe déploie à 360 ° les meilleurs talents de chaque discipline pour conquérir de nouveaux territoires d'expression. Voici nos dernières réalisations...</p>
+                    <p> Les meilleurs talents de chaque discipline pour conquérir de nouveaux territoires d'expression. Voici nos dernières réalisations...
+                  Certains travaux pour nos clients.</p>
               </div>
             </div>
-        
+
+              <div class="btn-part">
+                  <div class="btn-group">
+                      <button class="active button">Nos travaux</button>
+                      <button class="button">Créatifs</button>
+                      <button class="button">Corporates</button>
+                      <button class="button">Portfolio</button>
+                  </div>
+              </div>
+<br>
+
             <div id="container">
                 
                 <figure class="portfolio">
